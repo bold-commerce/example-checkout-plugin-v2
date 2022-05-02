@@ -1,3 +1,5 @@
 node_modules
 .env
 .idea/
+sample.db
+package-lock.json
