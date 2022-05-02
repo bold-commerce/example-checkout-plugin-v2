@@ -5,6 +5,7 @@ const logger = require('morgan');
 
 const indexRouter = require('./routes/index');
 const oauthRouter = require('./routes/oauth');
+const eventRouter = require('./routes/event');
 
 const app = express();
 
@@ -16,5 +17,6 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', indexRouter);
 app.use('/oauth', oauthRouter);
+app.use('/checkout/event', eventRouter);
 
 module.exports = app;
