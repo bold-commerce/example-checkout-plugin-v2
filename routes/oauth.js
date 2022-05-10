@@ -18,9 +18,6 @@ router.get('/install', function(req, res, next) {
         'provide_shipping_rates',
         'add_fee',
         'modify_order',
-        'modify_shipping_address',
-        'modify_shipping',
-        'read_shipping_lines',
     ].join(' ');
 
     res.redirect(
